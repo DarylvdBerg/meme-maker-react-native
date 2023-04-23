@@ -31,6 +31,13 @@
         "projectId": "edab2d13-a024-41a8-b4e5-52c5a95b3597"
       }
     },
-    "owner": "darylvdberg"
+    "owner": "darylvdberg",
+    "plugins": [
+      [
+        "expo-camera", {
+          "cameraPermissions": "Allow $(PRODUCT_NAME) to acces your camera."
+        }
+      ]
+    ]
   }
 }
