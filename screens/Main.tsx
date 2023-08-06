@@ -1,12 +1,18 @@
 import { SafeAreaView } from "react-native-safe-area-context"
-import { Text } from "react-native";
+import { Button, ButtonStyle, ButtonSize } from "components/Button"
 
-export default function Main() {
+export default function Main({navigation}) {
 
+    const transitionToCameraView = () => {
+        navigation.navigate("Meme")
+    }
 
     return (
         <SafeAreaView>
-            <Text>Home screen</Text>
+            <Button clickHandler={transitionToCameraView} 
+                text="To camera view" 
+                style={ButtonStyle.Primary} 
+                size={ButtonSize.Small}/>
         </SafeAreaView>
     )
 }
